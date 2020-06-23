@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="shortcut icon"
-            href="images/favicon.ico"
-            type="image/x-icon"
-        />
-        <title>Hope Is Rising</title>
 
-        <script>
+<!-- Website built by Ryan Nathan Wilson | https://ryannathan.dev  -->
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>Hope Is Rising</title>
+
+		<script>
             document.addEventListener("DOMContentLoaded", function (event) {
                 document.body.classList.add("js-loading");
                 window.addEventListener("load", showPage);
@@ -18,46 +17,403 @@
                     document.body.classList.remove("js-loading");
                 }
             });
-        </script>
+		</script>
+		
+		<script src="https://js.churchcenter.com/modal/v1"></script>
 
         <style>
             .js-loading * {
                 animation-play-state: paused !important;
             }
         </style>
-
-      
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-
+	  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 	<body>
-		<div class="container">
-			<div id="hope">HOPE IS RISING</div>
-			<div id="date">Sunday, July 12, 2020</div>
-			<div id="details">tickets available soon</div>
-		</div>
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
+		<!---------------------------------HEADER------------------------------------->
+		<header id="header">
+			<div id="myTopnav" class="topnav">
+				<a class="nav-link menu active" href="#home">HOPE IS RISING</a>
+				<a class="nav-link menu" href="#about">ABOUT</a>
+				<a class="nav-link menu" href="#featuring">FEATURING</a>
+				<a class="nav-link menu" href="#tickets">TICKETS</a>
+				<a class="nav-link menu" href="#food">FOOD</a>
+				<a class="nav-link menu" href="#logistics">LOGISTICS</a>
+				<a class="nav-link menu" href="#map">MAP</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+		<div id="hero"></div>
+			<!--------------------------------- HOME ------------------------------------->
+		<div id="home" class="section">
+			<div id="hope" class="content">
+				<img src="images/hopeisrising.png" alt="Hope Is Rising" id="hopeisrising">
+				<div class="myrow">
+					<a href="https://newcity617.churchcenter.com/people/forms/144029" class="engage"  data-open-in-church-center-modal="true">
+						<div>VOLUNTEER</div>
+					</a>
+					<div class="engage" id="number1-109422218802">
+						TICKETS
+						<img src="images/eventbrite-512.png" alt="">
+					</div>
 
-        <script src="js/script.js"></script>
-    </body>
+					<noscript><a href="https://www.eventbrite.com/e/hope-is-rising-tickets-109422218802" rel="noopener noreferrer" target="_blank"></noscript>
+					<noscript></a>Buy Tickets on Eventbrite</noscript>
+							
+					<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+					
+					<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+						};
+					
+						window.EBWidgets.createWidget({
+							widgetType: 'checkout',
+							eventId: '109422218802',
+							modal: true,
+							modalTriggerElementId: 'number1-109422218802',
+							onOrderComplete: exampleCallback
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------- ABOUT ------------------------------------>
+		<div id="about" class="section">
+			<div id="vision" class="content">
+				<h3>ABOUT</h3>
+				<p>
+					NewCity Church, in collaboration with local community leaders, organizations and businesses, is hosting, HOPE IS RISING. Join us for a free drive-in concert event designed as a safe space for people of color and allies to recharge and be inspired. 
+				</p>
+				<br>
+				<p>
+					Enjoy listening to a live band with special musical guests, celebrate the Black culture, and listen to a panel discussion, <b>"My City and Me,"</b> moderated by <b>Rev. Devlin Scott</b> with panelists, Newton Mayor <b>Ruthanne Fuller</b>, Newton Police Department Chief <b>David MacDonald</b>, Newton Police Department Public Information Officer <b>Lt. Bruce Apotheker</b>, METCO Specialist and Newton Public Schools Teacher <b>Katani Sumner</b>, and <b>members of Newton's Coalition of Black Residents</b>.
+				</p>
+				<br>
+				<p>
+					Social distancing will be observed. Masks are required.
+				</p>
+				<p id="when">
+					<b>
+						<br>
+						Date: SUNDAY, JULY 12, 2020
+						<br>
+						Time: 4PM - 6PM
+						<br>
+						Location: NORTHLAND LOT (MARSHALLS PLAZA)
+						<br>
+						275 - 281 Needham St. Newton, MA 02464
+
+					</b>
+				</p>
+			</div>
+		</div>
+		<!--------------------------------- FEATURING --------------------------------->
+		<div id="featuring" class="section">
+			<div class="content">
+				<h3>FEATURING</h3>
+				<div class="myrow">
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/Devlin.jpg" alt="Rev. Devlin Scott">
+						</div>
+						<div class="name">
+							Rev. Devlin Scott
+						</div>
+						<div class="feature-description">
+							<p>
+								Lead Pastor of NewCity Church <br>
+								Event Host
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/KS.jpg" alt="Katie Scott">
+						</div>
+						<div class="name">
+							Katie Scott
+						</div>
+						<div class="feature-description">
+							<p>
+								Co-Lead Pastor<br>
+								NewCity Church
+							</p>					
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/Danny.jpeg" alt="Danny Rivera">
+						</div>
+						<div class="name">
+							Danny Rivera
+						</div>
+						<div class="feature-description">
+							<p>
+								Musician
+								<br>
+								Educator
+								<br>
+								Social Activist
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/david.jpg" alt="Chief David MacDonald">
+						</div>
+						<div class="name">
+							Chief David MacDonald
+						</div>
+						<div class="feature-description">
+							<p>
+								Chief of Police for Newton, MA
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/ruthanne.jpg" alt="Mayor Ruthanne Fuller">
+						</div>
+						<div class="name">
+							Mayor Ruthanne Fuller
+						</div>
+						<div class="feature-description">
+							<p>
+								Mayor of Newton, MA
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/apotheker.jpeg" alt="Lt. Bruce Apotheker">
+						</div>
+						<div class="name">
+							Lt. Bruce Apotheker
+						</div>
+						<div class="feature-description">
+							<p>
+								Commander of the Community Services Bureau
+								<br>
+								Civil Rights Officer for the City of Newton
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/karen.png" alt="Karen Carroll Bennett">
+						</div>
+						<div class="name">
+							Karen Carroll Bennett
+						</div>
+						<div class="feature-description">
+							<p>
+								Newton’s Coalition of Black Residents
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/angela.jpg" alt="Angela Pitter">
+						</div>
+						<div class="name">
+							Angela Pitter
+						</div>
+						<div class="feature-description">
+							<p>
+								Newton’s Coalition of Black Residents
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/katani.jpg" alt="Katani Sumner">
+						</div>
+						<div class="name">
+							Katani Sumner
+						</div>
+						<div class="feature-description">
+							<p>
+								Singer and Narrator
+								<br>
+								METCO Counselor/Teacher at Newton Public Schools
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/kurt.png" alt="Rev. Kurt Lange">
+						</div>
+						<div class="name">
+							Rev. Kurt Lange
+						</div>
+						<div class="feature-description">
+							<p>
+								Pastor <br>
+								East Coast International Church
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/alicia.jpg" alt="Rev. Alicia M. Johnson">
+						</div>
+						<div class="name">
+							Rev. Alicia M. Johnson
+						</div>
+						<div class="feature-description">
+							<p>
+								Assistant Pastor<br>
+								Myrtle Baptist Church
+							</p>
+						</div>
+					</div>
+					<div class="mycard">
+						<div class="profile">
+							<img src="images/featured/lindsay.jpg" alt="Lindsay Gray-Janus">
+						</div>
+						<div class="name">
+							Lindsay Gray-Janus
+						</div>
+						<div class="feature-description">
+							<p>
+								Dancer
+								<br>
+								Choreographer
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------- TICKETS ---------------------------------->
+		<div id="tickets" class="section">
+			<div class="content">
+				
+				<noscript><a href="https://www.eventbrite.com/e/hope-is-rising-tickets-109422218802" rel="noopener noreferrer" target="_blank"></noscript>
+					<!-- You can customize this button any way you like -->
+					<div id="number2-109422218802" type="button">
+						TICKETS
+						<img src="images/eventbrite_icon.png" alt="eventbrite icon">
+						
+					</div>
+				<noscript></a>Buy Tickets on Eventbrite</noscript>
+					
+				<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+				
+				<script type="text/javascript">
+					var exampleCallback = function() {
+						console.log('Order complete!');
+					};
+				
+					window.EBWidgets.createWidget({
+						widgetType: 'checkout',
+						eventId: '109422218802',
+						modal: true,
+						modalTriggerElementId: 'number2-109422218802',
+						onOrderComplete: exampleCallback
+					});
+				</script>
+				<p>
+					Tickets are free, but are required for entry.
+				</p>
+			</div>
+		</div>
+		<!---------------------------------- FOOD ------------------------------------>
+		<div id="food" class="section">
+			<div class="content">
+				<h3>FOOD</h3>
+				<p>
+					Coming soon...
+				</p>
+			</div>
+		</div>
+		<!--------------------------------- LOGISTICS -------------------------------->
+		<div id="logistics" class="section">
+			<div class="content">
+				<h3>LOGISTICS</h3>
+				<p>
+					Drive in the parking lot and display your ticket through your window. You'll be directed by our amazing volunteers to your designated spot. Cars will be parked in every other spot. The setup is similar to a drive-in movie where you can watch the concert through your windshield and tune in with your radio. Honk your horns to applaud and celebrate! 
+					<br>
+					<br>
+
+					Social distancing will be observed.
+					
+				</p>
+			</div>
+		</div>
+		<!--------------------------------- LOCATION --------------------------------->
+		<div id="map" class="section">
+			<div id="address" class="content">
+				<h3>
+					LOCATION
+				</h3>
+				<p>
+					NORTHLAND LOT <br>
+					(MARSHALLS PLAZA) <br>
+					275 - 281 Needham St. <br>
+					Newton, MA 02464
+					
+				</p>
+			</div>
+			<div id="google-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.2752031244156!2d-71.21641515597669!3d42.30945783592888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e382189d8d8e57%3A0xd64b17714bfa739e!2s275%20Needham%20St%20%23281%2C%20Newton%2C%20MA%2002464!5e0!3m2!1sen!2sus!4v1592014826478!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>				
+			</div>
+		</div>
+		<!--------------------------------- SPONSORS --------------------------------->
+		<div id="sponsors">
+			<div class="myrow">
+				<a href="http://newcitychurch.cc">
+					<img src="images/NewCityChurch-Horizontal.png" alt="New City Church">
+				</a>
+				<a href="http://harmonyfoundationnewton.org/">
+					<img src="images/Harmony Logo.png" alt="Harmony Foundation">
+				</a>
+				<a href="https://www.village-bank.com/">
+					<img src="images/Village Bank.png" alt="The Village Bank">
+				</a>
+				<a href="https://snemn.com/">
+					<img src="images/SNEMN.png" alt="SNE Ministry Network">
+				</a>
+			</div>
+		</div>
+		<!--------------------------------- FOOTER ----------------------------------->
+		<footer id="footer">
+			<div class="myrow content">
+				<div id="footerchunk1">
+					<span>
+						CONTACT <br>
+					</span> 
+					<p>
+
+						<a href="http://newcitychurch.cc">NewCity Church</a> <br>
+						286 Waverley Ave <br>
+						Newton, MA 02458 <br>
+						617-564-1271 <br>
+						<a href="mailto:hello@newcitychurch.cc">HELLO@NEWCITYCHURCH.CC</a>
+
+					</p>
+				</div>
+				<div id="footerchunk2">
+					<span>SUNDAYS</span>
+					<br>
+					<p>
+						Looking for a way to connect faith and culture? Check out NewCity Church. <br>
+						Sundays at 10:30AM <br>
+						Visit <a href="http://www.newcitychurch.cc">WWW.NEWCITYCHURCH.CC</a> for more information. 
+
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
 </html>
