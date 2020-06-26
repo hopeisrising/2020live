@@ -353,6 +353,29 @@ html:not([data-scroll='0']) #header {
   margin-top: 1.5rem;
 }
 
+#media_station {
+  display: block;
+  padding-top: 10rem;
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+#media_station #media {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+#media_station #media #station {
+  margin-bottom: 1rem;
+}
+
+#media_station #media img {
+  padding: 1rem;
+  float: right;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 #logistics {
   display: block;
   padding-top: 10rem;
@@ -507,6 +530,9 @@ html:not([data-scroll='0']) #header {
     display: block;
     text-align: center;
   }
+  #media_station img {
+    margin: 0.5rem 0 .5rem 1rem;
+  }
   #number2-109422218802 {
     font-size: 3rem;
     padding: .3rem 1rem 0;
@@ -549,6 +575,9 @@ html:not([data-scroll='0']) #header {
             box-shadow: 0 0 1rem rgba(0, 0, 0, 0.459);
   }
   #food img {
+    margin: 3rem 0 0 1rem;
+  }
+  #media_station img {
     margin: 3rem 0 0 1rem;
   }
   #google-map {
