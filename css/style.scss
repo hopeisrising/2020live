@@ -25,9 +25,6 @@ body {
 	opacity: 1;
 	animation-name: TEXT_APPEAR;
 	animation-duration: 2s;
-	h3 {
-		font-weight: 400;
-		font-size: 4rem;}
 	p {
 		// font-family: 'Open Sans', sans-serif;
 		font-family: 'Montserrat', sans-serif;
@@ -67,7 +64,6 @@ html {
 	.active {
 		color: $yellow;
 	}
-
 }
 html:not([data-scroll='0']) {
 	
@@ -200,24 +196,72 @@ html:not([data-scroll='0']) {
 		display: flex;
 		flex-flow: row wrap;
 		margin-bottom: 10rem;
+		.devcard {
+			.devrow {
+				display: flex;
+			}
+			background-color: $white;
+			display: flex;
+			color: $grey;
+			position: relative;
+			width: 100%;
+			.profile {
+				position: relative;
+				&::after {
+					content: "";
+					display: block;
+					padding-bottom: 100%;
+				}
+				img {
+					position: absolute;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+			}
+			.quote {
+				font-size: .7rem;
+				font-family: 'Montserrat', sans-serif;
+				font-style: italic;
+				text-align: left;
+				margin: 0 2rem;
+				line-height: 1.2rem;
+				&::before {
+					color: rgb(179, 179, 179);
+					vertical-align: -.6rem;
+					line-height: .7rem;
+					font-size: 2rem;
+					content: open-quote;
+				}
+				&::after {
+					color: rgb(179, 179, 179);
+					line-height: .7rem;
+					vertical-align: -.6rem;
+					font-size: 2rem;
+					content: close-quote;
+				}
+			}
+		}
+		p {
+			line-height: 1.5;
+			margin-top: 1rem;
+			padding: 0 1rem 2rem 1rem;
+			font-size: 1rem;
+		}
 		.mycard {
 			background-color: $white;
 			display: block;
 			color: $grey;
 			position: relative;
-			p {
-				line-height: 1.5;
-				margin-top: 1rem;
-			}
 			.profile {
 				width: 100%;
 				position: relative;
 				overflow: hidden;
-			&::after {
-				content: "";
-				display: block;
-				padding-bottom: 100%;
-			}
+				&::after {
+					content: "";
+					display: block;
+					padding-bottom: 100%;
+				}
 				img {
 					position: absolute;
 					height: 100%;
@@ -229,14 +273,7 @@ html:not([data-scroll='0']) {
 				margin: 1rem 1rem 0 1rem;
 			}
 		}
-	}
-
-
-	.feature-description {
-		text-align: center;
-		padding: 0 1rem 2rem 1rem;
-		font-size: 1rem;
-	}
+	}	
 }
 #tickets {
 	height: 100vh;
@@ -268,6 +305,7 @@ html:not([data-scroll='0']) {
 	display: block;
 	padding-top: 10rem;
 	background-color: $transparentgrey;
+	overflow: hidden;
 	#french {
 
 		max-width: 600px;
@@ -386,6 +424,9 @@ html:not([data-scroll='0']) {
 }	
 
 @media screen and (max-width: $breakpoint) {
+	h3 {
+		font-weight: 400;
+		font-size: 3rem;}
 	.topnav a:not(:first-child) {
 		display: none;
 	}
@@ -433,7 +474,17 @@ html:not([data-scroll='0']) {
 	.mycard {
 		width: 100%;
 		margin: 1rem 0;
-		
+	}
+	.devcard {
+		width: 100%;
+		margin: 1rem 0;
+		.feature-description {
+			margin: 2rem 0;
+		}
+	}
+
+	.devrow {
+		flex-direction: column;
 	}
 	#food {
 		img {
@@ -475,14 +526,38 @@ html:not([data-scroll='0']) {
 	}
 }
 @media screen and (min-width: $breakpoint) {
+	h3 {
+		font-weight: 400;
+		font-size: 4rem;}
 	.engage {
 		margin: 1rem;
+	}
+	.devcard {
+		width: 300px;
+		margin: 1rem;
+		box-shadow: 0 0 0 0 $shadow;
+		transition: 200ms;
+		.devrow {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+		.profile {
+			width: 300px;
+		}
+		.feature-description {
+			margin: 2rem auto;
+			display: block;
+			width: 668px;
+		}
+	}
+	.devcard:hover {
+		box-shadow: 0 0 1rem $shadow;
 	}
 	.mycard {
 		width: 300px;
 		margin: 1rem auto;
 		box-shadow: 0 0 0 0 $shadow;
-		transition: .2s;
+		transition: 200ms;
 	}
 	.mycard:hover {
 		box-shadow: 0 0 1rem $shadow;

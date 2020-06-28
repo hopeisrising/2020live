@@ -34,11 +34,6 @@ body {
           animation-duration: 2s;
 }
 
-body h3 {
-  font-weight: 400;
-  font-size: 4rem;
-}
-
 body p {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -246,16 +241,76 @@ html:not([data-scroll='0']) #header {
   margin-bottom: 10rem;
 }
 
+#featuring .myrow .devcard {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1a1a1a;
+  position: relative;
+  width: 100%;
+}
+
+#featuring .myrow .devcard .devrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#featuring .myrow .devcard .profile {
+  position: relative;
+}
+
+#featuring .myrow .devcard .profile::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#featuring .myrow .devcard .profile img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#featuring .myrow .devcard .quote {
+  font-size: .7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  text-align: left;
+  margin: 0 2rem;
+  line-height: 1.2rem;
+}
+
+#featuring .myrow .devcard .quote::before {
+  color: #b3b3b3;
+  vertical-align: -.6rem;
+  line-height: .7rem;
+  font-size: 2rem;
+  content: open-quote;
+}
+
+#featuring .myrow .devcard .quote::after {
+  color: #b3b3b3;
+  line-height: .7rem;
+  vertical-align: -.6rem;
+  font-size: 2rem;
+  content: close-quote;
+}
+
+#featuring .myrow p {
+  line-height: 1.5;
+  margin-top: 1rem;
+  padding: 0 1rem 2rem 1rem;
+  font-size: 1rem;
+}
+
 #featuring .myrow .mycard {
   background-color: white;
   display: block;
   color: #1a1a1a;
   position: relative;
-}
-
-#featuring .myrow .mycard p {
-  line-height: 1.5;
-  margin-top: 1rem;
 }
 
 #featuring .myrow .mycard .profile {
@@ -279,12 +334,6 @@ html:not([data-scroll='0']) #header {
 
 #featuring .myrow .mycard .name {
   margin: 1rem 1rem 0 1rem;
-}
-
-#featuring .feature-description {
-  text-align: center;
-  padding: 0 1rem 2rem 1rem;
-  font-size: 1rem;
 }
 
 #tickets {
@@ -323,6 +372,7 @@ html:not([data-scroll='0']) #header {
   display: block;
   padding-top: 10rem;
   background-color: rgba(26, 26, 26, 0.8);
+  overflow: hidden;
 }
 
 #food #french {
@@ -472,6 +522,10 @@ html:not([data-scroll='0']) #header {
 }
 
 @media screen and (max-width: 1000px) {
+  h3 {
+    font-weight: 400;
+    font-size: 3rem;
+  }
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -523,6 +577,19 @@ html:not([data-scroll='0']) #header {
     width: 100%;
     margin: 1rem 0;
   }
+  .devcard {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .devcard .feature-description {
+    margin: 2rem 0;
+  }
+  .devrow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   #food img {
     margin: 0.5rem 0 .5rem 1rem;
   }
@@ -559,16 +626,49 @@ html:not([data-scroll='0']) #header {
 }
 
 @media screen and (min-width: 1000px) {
+  h3 {
+    font-weight: 400;
+    font-size: 4rem;
+  }
   .engage {
     margin: 1rem;
+  }
+  .devcard {
+    width: 300px;
+    margin: 1rem;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.459);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.459);
+    -webkit-transition: 200ms;
+    transition: 200ms;
+  }
+  .devcard .devrow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .devcard .profile {
+    width: 300px;
+  }
+  .devcard .feature-description {
+    margin: 2rem auto;
+    display: block;
+    width: 668px;
+  }
+  .devcard:hover {
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.459);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.459);
   }
   .mycard {
     width: 300px;
     margin: 1rem auto;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.459);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.459);
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: 200ms;
+    transition: 200ms;
   }
   .mycard:hover {
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.459);
