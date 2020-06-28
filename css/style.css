@@ -654,7 +654,7 @@ html:not([data-scroll='0']) #header {
     width: 300px;
   }
   .devcard .feature-description {
-    margin: 2rem auto;
+    margin: 1.8rem auto;
     display: block;
     width: 668px;
   }
