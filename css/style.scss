@@ -397,28 +397,17 @@ html:not([data-scroll='0']) {
 		flex-flow: row wrap;
 		max-width: $breakpoint;
 		justify-content: space-evenly;
-		#footerchunk1 {
+		.footerchunk {
 			span {
 				color: $yellow;
 			}
 			text-align: left;
-			width: 300px;
+			width: 280px;
 			display: block;
 			font-size: 1rem;
 			line-height: 2.5rem;
 			color: $greylight;
 			margin-bottom: 2rem;
-		}
-		#footerchunk2 {
-			span {
-				color: $yellow;
-			}
-			text-align: left;
-			max-width: 300px;
-			display: block;
-			font-size: 1rem;
-			line-height: 2.5rem;
-			color: $greylight;
 		}
 	}
 }	
