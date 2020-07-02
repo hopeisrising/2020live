@@ -401,6 +401,20 @@ html:not([data-scroll='0']) #header {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem 2rem;
   margin-top: 1.5rem;
+  -webkit-transition: background-color 150ms ease;
+  transition: background-color 150ms ease;
+}
+
+#food #french #orderfood a {
+  color: #1a1a1a;
+}
+
+#food #french #orderfood a:hover::after {
+  content: none;
+}
+
+#food #french #orderfood:hover {
+  background-color: white;
 }
 
 #media_station {

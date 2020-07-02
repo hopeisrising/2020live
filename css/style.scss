@@ -328,6 +328,17 @@ html:not([data-scroll='0']) {
 			background-color: $transparentwhite;
 			padding: 1rem 2rem;
 			margin-top: 1.5rem;
+			transition: background-color 150ms ease;
+			a {
+				color: $grey;
+			}
+			a:hover::after {
+				content: none;
+			}
+			
+		}
+		#orderfood:hover {
+			background-color: $white;
 		}
 	}
 }
