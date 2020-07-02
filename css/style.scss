@@ -321,6 +321,9 @@ html:not([data-scroll='0']) {
 		}
 		#link {
 			margin: 1rem 0;
+			.no-underline:hover::after {
+				content: none;
+			}
 		}
 		#orderfood {
 			display: inline-block;
@@ -329,16 +332,11 @@ html:not([data-scroll='0']) {
 			padding: 1rem 2rem;
 			margin-top: 1.5rem;
 			transition: background-color 150ms ease;
-			a {
-				color: $grey;
-			}
-			a:hover::after {
-				content: none;
-			}
-			
+		
 		}
 		#orderfood:hover {
 			background-color: $white;
+			
 		}
 	}
 }
