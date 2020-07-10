@@ -63,12 +63,21 @@ body a:hover {
   color: #e2e2e2;
 }
 
-body ul {
-  list-style-type: none;
+body ul li {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2em;
+  font-size: 1rem;
+  letter-spacing: 0;
+  margin: auto;
+  text-align: left;
 }
 
-body ul li {
-  margin: 0 .5rem;
+body ul li b {
+  font-weight: 600;
+  letter-spacing: .1em;
 }
 
 html .active {
@@ -153,7 +162,6 @@ html:not([data-scroll='0']) #header {
 #home {
   position: relative;
   min-height: 100vh;
-  vertical-align: middle;
   overflow-x: hidden;
   -webkit-transition: .1s;
   transition: .1s;
@@ -190,8 +198,8 @@ html:not([data-scroll='0']) #header {
   width: 10rem;
   padding: .5rem;
   color: #1a1a1a;
-  background-color: rgba(255, 255, 255, 0.4);
-  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
   -webkit-transition: 250ms;
   transition: 250ms;
 }
