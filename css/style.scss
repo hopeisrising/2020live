@@ -75,6 +75,7 @@ body {
 }
 
 html {
+	scroll-behavior: smooth;
 	.active {
 		color: $yellow;
 	}
@@ -397,6 +398,16 @@ html:not([data-scroll='0']) {
 		position:relative;
 	}
 }
+#live-stream {
+	padding: 5rem 1rem;
+	background-color: $transparentgrey;
+
+	#vimeo {
+		margin: auto;
+		position:relative;
+	}
+}
+
 #sponsors {
 	padding: 5rem 1rem;
 	background-color: $white;
@@ -536,6 +547,22 @@ html:not([data-scroll='0']) {
 			position:absolute;
 		}
 	}
+	#vimeo {
+		max-width: 600px;
+		margin: auto;
+		text-align: center;
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		iframe {
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			position:absolute;
+		}
+	}
 }
 @media screen and (min-width: $breakpoint) {
 	h3 {
@@ -585,6 +612,9 @@ html:not([data-scroll='0']) {
 		}
 	}
 	#google-map {
+		width: 600px;
+	}
+	#vimeo {
 		width: 600px;
 	}
 	#number2-109422218802 {
