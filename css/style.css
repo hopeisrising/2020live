@@ -199,11 +199,13 @@ html:not([data-scroll='0']) #header {
 
 #home #hope .engage {
   display: block;
-  width: 10rem;
-  padding: .5rem;
+  width: 15rem;
+  padding: 2rem;
   color: #1a1a1a;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: .1rem;
   -webkit-transition: 250ms;
   transition: 250ms;
 }
